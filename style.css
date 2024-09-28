@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.block1{
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+pre{
+    font-size: 20px;
+}
+
+hr{
+    width: 1300px;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p{
+    display: none;
+}
+
+.open{
+    display: block;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="block1" id="block1" onclick="">
+            <div class="box">
+                <h3>Нажать чтобы что-то открыть</h3>
+                <pre>⬇</pre>
+            </div>
+            <hr>
+            <p id="text" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Natus iste suscipit velit quae dignissimos ipsum voluptatem 
+                impedit sint ad, veritatis quia sequi libero ipsam odit placeat 
+                facilis. Eligendi, laborum incidunt.</p>
+        </div>
+        <div class="block1" id="block1" onclick="">
+            <div class="box">
+                <h3>Нажать чтобы что-то открыть</h3>
+                <pre>⬇</pre>
+            </div>
+            <hr>
+            <p id="text" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Natus iste suscipit velit quae dignissimos ipsum voluptatem 
+                impedit sint ad, veritatis quia sequi libero ipsam odit placeat 
+                facilis. Eligendi, laborum incidunt.</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    let title = document.querySelectorAll('.block1');
+    let content = document.querySelectorAll('.text');
+
+
+    for (let i = 0; i < title.length; i++){
+    title[i].addEventListener('click', () => {
+        content[i].classList.toggle('open')
+    })
+    }
+    
+</script>
